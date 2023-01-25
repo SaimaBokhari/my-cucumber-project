@@ -37,4 +37,4 @@ Feature: first feature file
 #  3. use the step definitions to complete the java code
 #  4. dryRun=false to execute test cases
 
-# tags
+# tags are used to select which of the scenarios you want to run

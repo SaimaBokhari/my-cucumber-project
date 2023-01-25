@@ -7,10 +7,19 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+
+        plugin = {
+                "pretty",     // makes the console printing green
+                "html:target/default-cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"
+        },
+        monochrome = false,     // makes the console grey
+
         features = "./src/test/resources/features",   // Path of Features folder
         glue = "stepdefinitions" ,        // PATH OF STEP DEFINITIONS folder or just the name coz all this package is at the same level as runners package
         dryRun = false,
-        tags = "@parametrizing1"
+        tags = "@scenario_outline"
 )
 public class Runner {
 }
@@ -27,4 +36,14 @@ features = "./src/test/resources/features",   // Path of Features folder
 glue = "stepdefinitions" ,  // PATH OF STEP DEFINITIONS folder or just the name coz all this package is at the same level as runners package
 dryRun = false    //If true that means RUN DRY => give me the missing stepdefinition without running all the previous steps OR the whole test case.
                   // To run the test case, we have to make dryRun=false (default) otherwise it won't run the test case.
+
+
+  Cucumber HTML Reports
+
+We need to add reports plug in the Runner to get the reports.
+We can get html, json, or junit reports
+For testers, html reports are the most important  (open in browsers)
+We also add Maven reporting plugins for reports
+
+
  */

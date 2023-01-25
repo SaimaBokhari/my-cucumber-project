@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="52.658" tests="7" skipped="0" failures="0" errors="0">
+<testcase classname="search_feature" name="search_scenario - Example #1.1" time="9.439">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "tesla" on google......................................passed
+Then verify page title contains "tesla".....................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search_feature" name="search_scenario - Example #1.2" time="7.057">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "nio" on google........................................passed
+Then verify page title contains "nio".......................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search_feature" name="search_scenario - Example #1.3" time="7.165">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "mercedes" on google...................................passed
+Then verify page title contains "mercedes"..................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search_feature" name="search_scenario - Example #1.4" time="6.221">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "bmw" on google........................................passed
+Then verify page title contains "bmw".......................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search_feature" name="search_scenario - Example #1.5" time="6.79">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "lexus" on google......................................passed
+Then verify page title contains "lexus".....................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search_feature" name="search_scenario - Example #1.6" time="8.087">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "toros" on google......................................passed
+Then verify page title contains "toros".....................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search_feature" name="search_scenario - Example #1.7" time="7.568">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for "acura" on google......................................passed
+Then verify page title contains "acura".....................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
