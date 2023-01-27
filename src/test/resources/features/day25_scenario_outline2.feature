@@ -2,7 +2,7 @@
 Feature: data_table
 
   Scenario Outline: TC_Create_And_Verify_Testdata_Creation
-    Given user is on "https://editor.datatables.net/"
+    Given user is on "https://editor.datatables.net/" page
     When user clicks on New button
     And user enters the first name in "<firstname>" input
     And user enters the last name in "<lastname>" input

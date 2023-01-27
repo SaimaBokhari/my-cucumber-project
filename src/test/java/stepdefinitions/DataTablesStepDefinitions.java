@@ -12,7 +12,7 @@ public class DataTablesStepDefinitions {
 
     DataTablesPage dataTablesPage = new DataTablesPage();  // create page object
 
-    @Given("user is on {string}")
+    @Given("user is on {string} page")
     public void user_is_on(String url) {
         // Write code here that turns the phrase above into concrete actions
         Driver.getDriver().get(url);

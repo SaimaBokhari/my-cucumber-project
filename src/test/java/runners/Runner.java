@@ -17,11 +17,12 @@ import org.junit.runner.RunWith;
         monochrome = false,     // makes the console grey
 
         features = "./src/test/resources/features",   // Path of Features folder
-        glue = "stepdefinitions" ,        // PATH OF STEP DEFINITIONS folder or just the name coz all this package is at the same level as runners package
+        glue = {"stepdefinitions" , "hooks"},
         dryRun = false,
-        tags = "@scenario_outline"
+        tags = "@smoke_tests"
 )
 public class Runner {
+
 }
 
 
@@ -44,6 +45,25 @@ We need to add reports plug in the Runner to get the reports.
 We can get html, json, or junit reports
 For testers, html reports are the most important  (open in browsers)
 We also add Maven reporting plugins for reports
+Change the name before running, otherwise it will be overrun e.g. "html:target/default-cucumber-reports2.html", .. add name/number after "cucumber-reports"
 
+DATA TABLES
+> are used to pass test data (multiple data)
+> Data Tables are similar to scenario_outline but a bit more difficult as it requires more Java codes
+> DIFFERENCES
+> No "Examples" keyword in DATA TABLES
+> DATA TABLES can be used at any step in the code, but Examples keyword is ONLY used at the end of the code
+> In DATA TABLES, we use "Scenario" ONLY.
+> DATA TABLES return tables object in the method, so we have to use Collections to use them in stepdefinitions
+> Scenario outline returns String in the method, so easier to get and use.
+> DATA TABLES are not as popular as Scenario Outline
+
+HOOKS
+> specific for Cucumber .. important one
+> it is a class that runs Before and After each scenario
+> import from Cucumber
+> used to generate reports with screenshots
+> AfterMethod is very helpful to capture screenshots when Scenario fails
+> screenshot will be attached in html file
 
  */
