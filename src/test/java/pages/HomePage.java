@@ -11,7 +11,17 @@ public class HomePage {
     }
 
 
-    @FindBy(id = "dropdown-basic-button")
+    @FindBy(partialLinkText = "Login")  // it's got <a which means anchor/link
+    public WebElement homePageLoginButton;
+
+    @FindBy(id="dropdown-basic-button")
     public WebElement userId;
+
+    @FindBy(linkText = "Logout")
+    public WebElement logoutLink;
+
+    @FindBy(xpath = "//button[text()='OK']")
+    public WebElement OK;
+
 
 }

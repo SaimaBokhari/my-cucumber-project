@@ -37,10 +37,10 @@ public class GoogleStepDefinitions {
         assertTrue(Driver.getDriver().getTitle().contains("iPhone"));
     }
 
-//    @Then("close the application")
-//    public void close_the_application() {
-//        Driver.closeDriver();
-//    }
+    @Then("close the application")
+    public void close_the_application() {
+        Driver.closeDriver();
+    }
 
     @When("user search for Teapot")
     public void user_search_for_teapot() {
