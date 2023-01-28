@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",   // Path of Features folder
         glue = {"stepdefinitions" , "hooks"},
         dryRun = false,
-        tags = "@smoke_tests"
+        tags = "@MedunnaRoom"
 )
 public class Runner {
 
