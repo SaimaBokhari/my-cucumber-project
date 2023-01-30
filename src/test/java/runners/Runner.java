@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
-                "rerun:target/failedRerun.txt"
+                "rerun:target/failedRerun.txt",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = false,     // makes the console grey
 
@@ -84,5 +85,7 @@ Normally we used excel in Junit, excel in Test NG, excel in cucumber.
 Ahmet works in Blue Car rental compony
 Framework: Cucumber BDD framework
 We mostly do BDD, but we can do TDD(Test Driven something) with cucumber using a)scenario outline b) excel
+
+SPARK REPORTS
 
  */
