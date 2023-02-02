@@ -1,49 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="2.347" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="grid_feature" name="TC01_running_tests_on_Edge" time="1.951">
-<failure type="org.openqa.selenium.SessionNotCreatedException" message="Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: cannot find msedge binary 
-Host info: host: 'Ahmeds-MacBook-Pro.local', ip: '2001:8f8:1b69:4b81:0:0:0:10a2%en0'
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.2.1'
-Driver info: driver.version: unknown
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.2.1'
-Driver info: driver.version: unknown
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}}]
-Capabilities {}">
-<![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: cannot find msedge binary 
-Host info: host: 'Ahmeds-MacBook-Pro.local', ip: '2001:8f8:1b69:4b81:0:0:0:10a2%en0'
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.2.1'
-Driver info: driver.version: unknown
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.2.1'
-Driver info: driver.version: unknown
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [], extensions: []}}}]
-Capabilities {}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:106)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:228)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:138)
-	at stepdefinitions.GridStepDefinitions.userIsOnTheApplication_urlUsingEdge(GridStepDefinitions.java:61)
-	at ✽.user is on the application_url using edge(file:///Users/Ahmed/IdeaProjects/my-cucumber-project/./src/test/resources/features/seleniumgrid/selenium_grid_test_case.feature:18)
-]]>
-</failure>
+<testsuite name="Cucumber" time="3.505" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="db_customer_testing" name="TC03_read_customer_email_info" time="3.222">
 <system-out><![CDATA[
-Given user is on the application_url using edge.............................failed
-Then verify the page title contains "Techpro Education".....................skipped
-Then close application......................................................skipped
+Given user connects to the application database.............................passed
+When user gets the column "*" from table "tp_customer"......................passed
+Then user reads all column "email" data.....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

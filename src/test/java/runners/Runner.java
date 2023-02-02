@@ -88,4 +88,6 @@ We mostly do BDD, but we can do TDD(Test Driven something) with cucumber using a
 
 SPARK REPORTS
 
+SLELENIUM IS FOR UI TESTING
+
  */
