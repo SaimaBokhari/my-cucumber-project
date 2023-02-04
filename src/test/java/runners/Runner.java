@@ -81,13 +81,26 @@ Action: It is the name of the action, which is going to perform on any Object su
 Test Data: Data can be any value which is needed by the Object to perform any action, like Username value for Username field.
 HYBRID FRAMEWORK
 A framework that can do both Behavior Driven Testing and Data Driven Testing
-Normally we used excel in Junit, excel in Test NG, excel in cucumber.
-Ahmet works in Blue Car rental compony
+Normally we use Excel in Junit, excel in Test NG, excel in cucumber.
+Ahmet works in Blue Car rental company
 Framework: Cucumber BDD framework
 We mostly do BDD, but we can do TDD(Test Driven something) with cucumber using a)scenario outline b) excel
 
 SPARK REPORTS
 
-SLELENIUM IS FOR UI TESTING
+CUCUMBER REPORTS UPLOADED TO CLOUD
+1. Create a properties under resources folder : cucumber.properties
+2. Add the code in that file : cucumber.publish.enabled=true
+3. Run your test. Then you should see the cucumber reports on the cloud. But that reports will be deleted automatically within 24 hours. We need to login with GitHub to keep it forever
+4. Click on login with GitHub > Authorize SmartBear
+5. Then create collection
+6. Add the token in the cucumber.properties
+7. Run test one more time. Then we should see the reports in the collection folder
+
+
+
+SELENIUM IS USED FOR UI TESTING
+JDBC for Backend testing
+
 
  */

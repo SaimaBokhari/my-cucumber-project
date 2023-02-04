@@ -4,6 +4,9 @@ import io.cucumber.java.en.*;
 import utilities.DBUtils;
 
 import java.sql.SQLException;
+import java.util.List;
+
+import static org.junit.Assert.assertTrue;
 
 public class DatabaseStepDefinitions {
     @Given("user connects to the application database")
@@ -54,4 +57,20 @@ public class DatabaseStepDefinitions {
         System.out.println("Row count: " + DBUtils.getRowCount());
 
     }
+
+    @Then("verify table {string} and column {string} contains {string}")
+    public void verify_table_and_column_contains(String table, String column, String data) {
+        // Going to the table
+        String query = "SELECT * FROM " + table;
+
+        // Getting all the column data and storing in the list
+        List<Object> columnData = DBUtils.getColumnData(query, column);
+        System.out.println("columnData = " + columnData);
+
+        assertTrue(columnData.contains(data));
+
+    }
+
+
+
 }

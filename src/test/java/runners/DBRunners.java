@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features/jdbc",   // Path of Features folder
         glue = {"stepdefinitions"},
         dryRun = false,
-        tags = "@db_read_email"
+        tags = "@db_read"
 )
 public class DBRunners {
 

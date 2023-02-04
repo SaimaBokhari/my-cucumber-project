@@ -4,6 +4,7 @@ Java DataBase Connectivity
 
 1. JDBC is an API to work with database. (a middleman b/w application and server)
 2. Add driver (through dependency) for postGre sql
+   used for BACK-END TESTING
 
  <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
